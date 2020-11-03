@@ -1,0 +1,4 @@
+#!/bin/sh
+
+umountable=$(udiskie-info -a -f 'is_mounted' | dmenu -p 'Lecsatolandó eszköz: ')
+udiskie-umount $umountable
