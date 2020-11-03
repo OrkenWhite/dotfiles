@@ -1,6 +1,6 @@
 A Chrome OS-like config.
 
-wm:		i3
+wm:		i3-gaps
 bar:		polybar
 wallpaper:	feh
 compositor:	xcompmgr
