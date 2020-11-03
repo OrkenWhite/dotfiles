@@ -1,0 +1,44 @@
+APPS:
+wm:		bspwm
+bar:		polybar
+hotkey:		sxhkd
+bg:		feh
+term:		alacritty
+comp:		picom
+menu:		rofi
+notif:		dunst
+prtsc:		scrot
+editor:		vim
+volume:		pamixer(PULSEAUDIO NEEDED!)
+passwd_store:	pass
+mail:		neomutt(mutt-wizard)
+lock:		physlock
+automount:	udiskie
+
+Wallpaper from r/wallpapers
+
+GTK theme:	Nordic
+Cursor theme:	Adwaita
+
+Fonts:
+Source Code Pro:	terminal
+Roboto:			polybar text
+Symbols Nerd Font:	polybar icons
+
+App shortcuts:
+Alt + K:	KeePassXC
+Alt + F:	Firefox
+Alt + D:	Discord
+Alt + T:	Microsoft Teams
+Alt + S:	Spotify
+Alt + M:	Mail custom script(neomutt + mbsync)
+
+Other shortcuts:
+Alt + plus: 	Increase window gap
+Alt + minus: 	Decrease window gap
+Alt + R:	Rotate windows
+
+IMPORTANT:
+"sudo poweroff" and "sudo reboot" commands need to be allowed to execute without a password for those functions to work from the bar.
+The xinitrc sets the keyboard layout to Hungarian.
+LaTeX-Suite plugin for vim recommended.
