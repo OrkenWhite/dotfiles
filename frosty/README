@@ -4,7 +4,7 @@ wm:		i3
 bar:		polybar
 wallpaper:	feh
 compositor:	xcompmgr
-terminal:	st(source with patches included)
+terminal:	st(patches included)
 color(!):	pywal(colorz engine)
 menu:		rofi
 notifications:	dunst
