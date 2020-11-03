@@ -31,8 +31,8 @@ alert = #bd2c40
 
 [bar/left]
 ;monitor = ${env:MONITOR:HDMI-1}
-width = 137
-height = 25 
+width = 10% 
+height = 3% 
 ;offset-x = 0%
 ;offset-y = 1%
 radius = 6
@@ -54,11 +54,11 @@ module-margin = 1
 padding-left = 0 
 padding-right = 0 
 
-font-2 = fixed:pixelsize=10;1
 font-0 = Roboto:fontformat=truetype:size=10;1
+font-1 = Symbola:pixelsize=10;1
+font-2 = fixed:pixelsize=10;1
 font-3 = RobotoMono Nerd Font Mono:pixelsize=10;1
 font-4 = siji:pixelsize=10;antialias=true;1
-font-1 = Symbola:pixelsize=10;1
 
 modules-left = i3
 wm-restack = i3
@@ -72,7 +72,7 @@ override-redirect = true
 [bar/right]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 25%
-height = 25 
+height = 3% 
 offset-x =75%
 ;offset-y = 1%
 radius = 6
@@ -105,16 +105,10 @@ modules-center = xbacklight pulseaudio cpu wlan eth battery date
 
 tray-position = left
 tray-padding = 2
-;tray-background = #0063ff
 
-;wm-restack = bspwm
 wm-restack = i3
 
 override-redirect = true
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
-
 
 cursor-click = pointer
 cursor-scroll = ns-resize

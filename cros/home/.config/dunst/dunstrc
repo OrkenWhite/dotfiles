@@ -9,7 +9,7 @@
 	horizontal_padding = 8
 	format = "<b>%s</b>\n%b"
 	word_wrap = no
-	dmenu = /usr/bin/rofi -dmenu -p dunst:
+	dmenu = /usr/bin/rofi -theme ~/.cache/wal/colors-rofi-dark -dmenu -p dunst:
 	browser = /usr/bin/qutebrowser
 	corner_radius = 5
 	icon_position = left

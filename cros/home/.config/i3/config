@@ -47,7 +47,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 exec_always --no-startup-id "xrdb -merge .Xresources"
-exec_always --no-startup-id "wal --backend colorz -a 30 -i ~/wallpapers/trees-by-snowfield-near-mountain.jpg -o ~/.config/i3/dunst.sh"
+exec_always --no-startup-id "wal --backend colorz -a 30 -i ~/wallpaper.jpg -o ~/.config/i3/dunst.sh"
 exec_always --no-startup-id "~/.config/i3/polybar.sh"
 exec_always --no-startup-id "xcompmgr"
 
