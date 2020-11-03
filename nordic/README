@@ -1,3 +1,5 @@
+A bspwm config based on the Nordic colorscheme.
+
 APPS:
 wm:		bspwm
 bar:		polybar

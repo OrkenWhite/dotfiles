@@ -1,0 +1,4 @@
+#!/bin/sh
+
+mountable=$(udiskie-info -a -f '!is_mounted' | dmenu -p 'Csatolandó eszköz: ')
+udiskie-mount $mountable
