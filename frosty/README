@@ -1,0 +1,16 @@
+A blueish config.
+
+wm:		i3
+bar:		polybar
+wallpaper:	feh
+compositor:	xcompmgr
+terminal:	st(source with patches included)
+color(!):	pywal(colorz engine)
+menu:		rofi
+notifications:	dunst
+brightness:	xbrightness
+cursor hiding:	xbanish
+screenshot:	scrot
+
+fonts:		Hack, Symbols Nerd Font
+cursor:		Volantes
