@@ -40,5 +40,6 @@ KEYBINDINGS
 
 OTHER INFO
 ----------
-There are custom udiskie scripts in the ~/bin directory.
-I was too lazy to copy the colors into the i3 config, so they are read from Xresources.
+There are custom udiskie scripts in the ~/bin directory.<br>
+I was too lazy to copy the colors into the i3 config, so they are read from Xresources.<br>
+The wallpaper needs to be set in nitrogen for the first run.
