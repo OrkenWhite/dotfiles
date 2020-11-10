@@ -1,6 +1,7 @@
 A bspwm config based on the Nordic colorscheme.
 
-APPS:
+SOFTWARE:
+---------
 wm:		bspwm
 bar:		polybar
 hotkey:		sxhkd
