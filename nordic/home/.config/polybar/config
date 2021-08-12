@@ -1,6 +1,6 @@
 [colors]
-background = #CC2E3440
-background-alt = #AA4C566A
+background = #EE2E3440
+background-alt = #EE4C566A
 foreground = #ECEFF4
 foreground-alt = #E5E9F0
 primary = #ECEFF4
@@ -9,7 +9,7 @@ alert = #BF616A
 
 [bar/nordbar]
 width = 100%
-height = 23
+height = 24
 radius = 0
 fixed-center = false
 
@@ -28,8 +28,8 @@ padding-right = 0
 module-margin-left = 0
 module-margin-right = 0
 
-font-0 = "Roboto:size=9;1"
-font-1 = "Symbols Nerd Font:size=9;1"
+font-0 = "Roboto:size=10;1"
+font-1 = "Symbols Nerd Font:size=10;1"
 
 modules-left = bspwm 
 modules-right = battery eth wlan pulseaudio cpu memory powermenu date 
@@ -104,7 +104,7 @@ label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface = wlp0s20f3
+interface = wlan0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
@@ -126,7 +126,7 @@ ramp-signal-foreground = #A3BE8C
 
 [module/eth]
 type = internal/network
-interface = enp4s0
+interface = eth0
 interval = 3.0
 
 label-connected = ﯱ %local_ip%

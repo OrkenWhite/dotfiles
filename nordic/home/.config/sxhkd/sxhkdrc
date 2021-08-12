@@ -121,34 +121,51 @@ super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
 ###OrkenWhite's custom keys
+# Make a screenshot
 Print 
 	mkdir -p ~/screenshots ; \
 	cd ~/screenshots/ ; \
 	scrot; \
 	cd -
+# Change volume
 XF86Audio{Raise,Lower}Volume
 	pamixer -{i,d} 10
+# Change brightness
 XF86MonBrightness{Up,Down}
 	xbacklight -{inc,dec} 10
+# Mute audio
 XF86AudioMute
 	pamixer -t
+# Mute microphone
 XF86AudioMicMute
 	pamixer --default-source -t
+# Increase/decrease window gap
 alt + {plus,minus}
 	a="bspc config -d focused window_gap"; $a $(($($a){+,-}5))
+# Reload Polybar
 alt + shift + @r
 	~/.config/polybar/launch.sh &
+# Discord
 alt + d
 	discord
+# Neomutt
 alt + m
-	alacritty -e neomutt	
+	alacritty -e neomutt
+# Brave	
 alt + b
-	brave 
+	brave
+# Spotify 
 alt + s
 	spotify 
+# KeePassXC
 alt + k
 	keepassxc
+# Teams
 alt + t
 	teams
+# Lock computer with physlock
 alt + l
 	physlock
+# List keybindings
+super + F1
+	alacritty -e  ~/.config/sxhkd/bindingprint.sh
