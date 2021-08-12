@@ -35,6 +35,7 @@ FONTS
 
 CUSTOM KEYBINDINGS
 -----------
+- Super + F1: List keybindings in terminal
 - Applications(**change these to suit your needs!**)
 	- Alt + K: KeePassXC
 	- Alt + B: Brave
@@ -53,6 +54,6 @@ CUSTOM KEYBINDINGS
 OTHER INFO
 ----------
 "sudo poweroff" and "sudo reboot" commands need to be allowed to execute without a password for those functions to work from the bar.<br>
-The xinitrc sets the keyboard layout to **Hungarian**.<br>
+You should correct the network interface names in the polybar config to make those widgets work.<br>
 LaTeX-Suite plugin for vim recommended.<br>
 It is recommended to place a wallpaper.jpg file in the root of the home directory.

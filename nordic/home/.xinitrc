@@ -1,2 +1,1 @@
-setxkbmap hu
 exec bspwm
