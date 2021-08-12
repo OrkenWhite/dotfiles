@@ -1,6 +1,6 @@
 [colors]
-background = #3B4252
-background-alt = #4C566A
+background = #CC2E3440
+background-alt = #AA4C566A
 foreground = #ECEFF4
 foreground-alt = #E5E9F0
 primary = #ECEFF4
@@ -9,7 +9,7 @@ alert = #BF616A
 
 [bar/nordbar]
 width = 100%
-height = 25
+height = 23
 radius = 0
 fixed-center = false
 
@@ -28,11 +28,11 @@ padding-right = 0
 module-margin-left = 0
 module-margin-right = 0
 
-font-0 = "Roboto:size=10;1"
-font-1 = "Symbols Nerd Font:size=10;1"
+font-0 = "Roboto:size=9;1"
+font-1 = "Symbols Nerd Font:size=9;1"
 
 modules-left = bspwm 
-modules-right = battery eth pulseaudio cpu memory powermenu date 
+modules-right = battery eth wlan pulseaudio cpu memory powermenu date 
 
 tray-position = center
 enable-ipc = true
@@ -62,7 +62,7 @@ label-urgent = %index%!
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
-label-empty = %index%
+label-empty = 
 label-empty-foreground = ${colors.background}
 label-empty-padding = 2
 
@@ -88,8 +88,8 @@ bar-empty-foreground = ${colors.foreground-alt}
 type = internal/cpu
 interval = 2
 format-prefix = "龍 "
-format-prefix-foreground = ${colors.foreground}
-format-background = #D08770
+#format-prefix-foreground = ${colors.foreground}
+format-foreground = #D08770
 format-padding = 2
 label = %percentage:2%%
 
@@ -98,39 +98,43 @@ type = internal/memory
 interval = 2
 format-prefix = " "
 format-padding = 2
-format-prefix-foreground = ${colors.foreground}
-format-background = #B48EAD
+#format-prefix-foreground = ${colors.foreground}
+format-foreground = #B48EAD
 label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface = net1
+interface = wlp0s20f3
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
+format-connected-foreground = #A3BE8C
+format-connected-padding = 2
 format-connected-underline = #9f78e1
 label-connected = %essid%
+label-connected-foreground = #A3BE8C
 
 format-disconnected =
 
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
-ramp-signal-foreground = ${colors.foreground-alt}
+ramp-signal-0 = ﯱ
+ramp-signal-1 = ﯱ
+ramp-signal-2 = ﯱ
+ramp-signal-3 = ﯱ
+ramp-signal-4 = ﯱ
+#ramp-signal-foreground = ${colors.foreground-alt}
+ramp-signal-foreground = #A3BE8C
 
 [module/eth]
 type = internal/network
-interface = enp2s0
+interface = enp4s0
 interval = 3.0
 
 label-connected = ﯱ %local_ip%
-label-connected-background = #A3BE8C
+label-connected-foreground = #A3BE8C
 label-connected-padding = 2
-format-disconnected =  <label-disconnected>
-label-disconnected = %ifname% disconnected
-label-disconnected-background = #A3BE8C
+format-disconnected = <label-disconnected>
+label-disconnected = 
+label-disconnected-foreground = #A3BE8C
 label-disconnected-padding = 2
 
 [module/date]
@@ -144,9 +148,10 @@ time = %H:%M
 time-alt = %H:%M:%S
 
 format-prefix = " " 
-format-prefix-foreground = ${colors.foreground-alt}
+#format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-foreground = #81A1C1
 format-padding = 2
-format-background = #81A1C1
+format-foreground = #81A1C1
 
 label = %time%
 
@@ -156,13 +161,13 @@ type = internal/pulseaudio
 format-volume = <label-volume> 
 label-volume-padding = 2
 label-volume = 墳 %percentage%%
-label-volume-background = #5E81AC
-label-volume-foreground = ${root.foreground}
+label-volume-foreground = #88C0D0
+#label-volume-foreground = ${root.foreground}
 
 label-muted = ﱝ némítva
 label-muted-padding = 2
-label-muted-background = #5E81AC
-label-muted-foreground = ${root.foreground}
+label-muted-foreground = #88C0D0
+#label-muted-foreground = ${root.foreground}
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #55aa55
@@ -213,27 +218,31 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 type = internal/battery
 battery = BAT0
 adapter = ADP1
-full-at = 88
 
 format-charging = <animation-charging> <label-charging>
-format-charging-background = #8fbcbb
+#format-charging-background = #8fbcbb
+format-charging-padding = 2
+label-charging-foreground = #8fbcbb
 
 format-discharging = <ramp-capacity> <label-discharging>
-format-discharging-background = #8fbcbb
+#format-discharging-background = #8fbcbb
+format-discharging-padding = 2
+label-discharging-foreground = #8fbcbb
 
-format-full-prefix = " "
-format-full-foreground = ${colors.foreground-alt}
-format-full-background = #8fbcbb
+format-full-prefix = " "
+#format-full-foreground = ${colors.foreground-alt}
+#format-full-background = #8fbcbb
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
 ramp-capacity-2 = 
-ramp-capacity-foreground = ${colors.foreground-alt}
-
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
-animation-charging-foreground = ${colors.foreground-alt}
+#ramp-capacity-foreground = ${colors.foreground-alt}
+ramp-capacity-foreground = #8FBCBB
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+#animation-charging-foreground = ${colors.foreground-alt}
+animation-charging-foreground = #8fbcbb
 animation-charging-framerate = 750
 
 animation-discharging-0 = 
@@ -249,14 +258,14 @@ expand-right = true
 
 format-spacing = 1
 format-padding = 2
-format-background = #BF616A
+format-foreground = #BF616A
 
 label-open = ⏻ Kikapcsolás
-label-open-foreground = ${colors.secondary}
+#label-open-foreground = ${colors.secondary}
 label-close =  kilép
-label-close-foreground = ${colors.secondary}
+#label-close-foreground = ${colors.secondary}
 label-separator = |
-label-separator-foreground = ${colors.foreground-alt}
+#label-separator-foreground = ${colors.foreground-alt}
 
 menu-0-0 = újraindítás
 menu-0-0-exec = menu-open-1
@@ -269,7 +278,7 @@ menu-1-1 = újraindítás
 menu-1-1-exec = sudo reboot
 
 menu-2-0 = kikapcsolás
-menu-2-0-exec = sudo poweroff
+menu-2-0-exec = sudo shutdown -P now 
 menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
 

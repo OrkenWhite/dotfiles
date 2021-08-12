@@ -3,6 +3,10 @@ A bspwm config based on the Nordic colorscheme.
 SOFTWARE
 --------
 - wm: bspwm
+- shell: bash or zsh(plugins: zsh-syntax-highlighting and zsh-autosuggestions)
+- sound daemon: pipewire
+- polkit agent: lxpolkit
+- blue light filter: redshift
 - bar: polybar
 - hotkey daemon: sxhkd
 - background: feh
@@ -11,13 +15,16 @@ SOFTWARE
 - menu: rofi
 - notifcation daemon: dunst
 - screenshot: scrot
-- volume control: pamixer(**PULSEAUDIO NEEDED!**)
+- volume control: pamixer(**PULSEAUDIO OR PIPEWIRE NEEDED!**)
+- brightness control: xbacklight(**Make sure to have your user in the video group!**)
 - lock: physlock
+- mail: mutt-wizard
 - automount: udiskie
 
 THEMES
 ------
 - GTK theme: Nordic
+- QT theme: qt5ct GTK
 - Cursor theme: Adwaita
 
 FONTS
@@ -26,17 +33,22 @@ FONTS
 - Roboto: polybar text
 - Symbols Nerd Font: polybar icons
 
-KEYBINDINGS
+CUSTOM KEYBINDINGS
 -----------
-- Application specific(**change these to suit your needs!**)
+- Applications(**change these to suit your needs!**)
 	- Alt + K: KeePassXC
-	- Alt + F: Firefox
+	- Alt + B: Brave
+	- Alt + M: neomutt
 	- Alt + D: Discord
 	- Alt + T: Microsoft Teams
 	- Alt + S: Spotify
 - Alt + plus: Increase window gap
 - Alt + minus: Decrease window gap
 - Alt + R: Rotate windows
+- Alt + L: Lock computer
+- Alt + Shift  + R: Reload Polybar
+- Print Screen: screenshot
+- Volume and brightness keys work as expected
 
 OTHER INFO
 ----------

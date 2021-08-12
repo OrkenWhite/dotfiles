@@ -1,12 +1,18 @@
 #! /bin/sh
 
 pgrep -x sxhkd > /dev/null || sxhkd &
-xrdb -merge .Xresources
+xrdb -merge ~/.Xresources
+/usr/bin/pipewire &
+/usr/bin/pipewire-pulse &
+/usr/bin/pipewire-media-session &
 udiskie --tray &
 xsetroot -cursor_name left_ptr
 picom &
-feh --bg-scale ~/wallpaper.jpg
+lxpolkit &
+feh --bg-scale ~/wallpaper.png
 ~/.config/polybar/launch.sh &
+redshift &
+mailsync &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
@@ -25,3 +31,4 @@ bspc rule -a Firefox:Browser state=floating
 bspc rule -a Firefox:Dialog state=floating
 bspc rule -a Firefox:firefox state=floating
 bspc rule -a Firefox:Prompt state=floating
+notify-send "If you're not asked for your password, sync your mails manually with mailsync to unlock pass!"

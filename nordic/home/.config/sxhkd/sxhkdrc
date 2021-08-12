@@ -122,27 +122,32 @@ super + {Left,Down,Up,Right}
 
 ###OrkenWhite's custom keys
 Print 
-	cd ~/Képek/screenshots/ ; \
+	mkdir -p ~/screenshots ; \
+	cd ~/screenshots/ ; \
 	scrot; \
 	cd -
-super + ctrl + {Up,Down}
+XF86Audio{Raise,Lower}Volume
 	pamixer -{i,d} 10
-super + ctrl + @m
+XF86MonBrightness{Up,Down}
+	xbacklight -{inc,dec} 10
+XF86AudioMute
 	pamixer -t
+XF86AudioMicMute
+	pamixer --default-source -t
 alt + {plus,minus}
 	a="bspc config -d focused window_gap"; $a $(($($a){+,-}5))
 alt + shift + @r
 	~/.config/polybar/launch.sh &
 alt + d
 	discord
-alt + f
-	firefox
+alt + m
+	alacritty -e neomutt	
+alt + b
+	brave 
 alt + s
-	spotify
+	spotify 
 alt + k
 	keepassxc
-alt + m
-	alacritty -e mail.sh
 alt + t
 	teams
 alt + l
