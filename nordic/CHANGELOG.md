@@ -1,3 +1,7 @@
+2021.08.13
+----------
+- Removed Hungarian text from Polybar poweroff menu
+
 2021.08.12
 ----------
 - Changed polybar look to make more sense
