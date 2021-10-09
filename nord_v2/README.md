@@ -1,4 +1,4 @@
-A bspwm config based on the Nordic colorscheme.
+A bspwm config based on the Nordic colorscheme. Heavily dependent on the compositor!
 
 SOFTWARE
 --------
@@ -11,15 +11,15 @@ SOFTWARE
 - hotkey daemon: sxhkd
 - background: feh
 - terminal: alacritty
-- compositor: picom
+- compositor: picom-ibhagwan
 - menu: rofi
 - notifcation daemon: dunst
 - screenshot: scrot
 - volume control: pamixer(**PULSEAUDIO OR PIPEWIRE NEEDED!**)
 - brightness control: xbacklight(**Make sure to have your user in the video group!**)
 - lock: physlock
-- mail: mutt-wizard
 - automount: udiskie
+- prompt(GUI): zsh-powerline
 
 THEMES
 ------
@@ -39,7 +39,6 @@ CUSTOM KEYBINDINGS
 - Applications(**change these to suit your needs!**)
 	- Alt + K: KeePassXC
 	- Alt + B: Brave
-	- Alt + M: neomutt
 	- Alt + D: Discord
 	- Alt + T: Microsoft Teams
 	- Alt + S: Spotify
@@ -53,7 +52,7 @@ CUSTOM KEYBINDINGS
 
 OTHER INFO
 ----------
-"sudo poweroff" and "sudo reboot" commands need to be allowed to execute without a password for those functions to work from the bar on non-systemd distros.<br>
+"sudo poweroff" and "sudo reboot" commands need to be set up to execute without a password for those functions to work from the bar if used on a non-systemd distro.<br>
 You should correct the network interface names in the polybar config to make those widgets work.<br>
 LaTeX-Suite plugin for vim recommended.<br>
 It is recommended to place a wallpaper.jpg file in the root of the home directory.

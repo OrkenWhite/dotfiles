@@ -1,0 +1,30 @@
+[global]
+	font = Roboto 12 
+	allow_markup = yes
+	format = "<b>%s</b>\n%b"
+	indicate_hidden = yes
+	alignment = left
+	word_wrap = yes
+	geometry = 300x100-30+50
+	transparency = 35
+	follow = keyboard
+	padding = 5
+	corner_radius = 5
+	horizontal_padding = 5
+	dmenu = /usr/bin/rofi -dmenu -p dunst:
+	browser = /usr/bin/brave
+[frame]
+	width = 0
+	color = "#000000"
+[urgency_low]
+	background = "#3B4252"
+	foreground = "#ECEFF4"
+	timeout = 10
+[urgency_normal]
+	background = "#3B4252"
+	foreground = "#ECEFF4"
+	timeout = 10
+[urgency_critical]
+	background = "#3B4252"
+	foreground = "#ECEFF4"
+	timeout = 10

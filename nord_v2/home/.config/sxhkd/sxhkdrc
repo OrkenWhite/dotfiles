@@ -119,53 +119,54 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
-
-###OrkenWhite's custom keys
-# Make a screenshot
+# make a screenshot
 Print 
-	mkdir -p ~/screenshots ; \
+	mkdir -p ~/screenshots/ ; \
 	cd ~/screenshots/ ; \
 	scrot; \
 	cd -
-# Change volume
+
+# change volume
 XF86Audio{Raise,Lower}Volume
 	pamixer -{i,d} 10
-# Change brightness
+
+# change brightness
 XF86MonBrightness{Up,Down}
 	xbacklight -{inc,dec} 10
-# Mute audio
+
+# mute audio
 XF86AudioMute
 	pamixer -t
-# Mute microphone
+
+# mute microphone
 XF86AudioMicMute
 	pamixer --default-source -t
-# Increase/decrease window gap
+
+# change window gap
 alt + {3,2}
-	echo 'a="bspc config -d focused window_gap"; $a $(($($a){+,-}5))' | bash
-# Reload Polybar
+	echo 'a="bspc config -d focused window_gap"; $a $(($($a){+,-}10))' | bash
+# reload polybar
 alt + shift + @r
 	~/.config/polybar/launch.sh &
-# Discord
+# open Discord
 alt + d
 	discord
-# Neomutt
-alt + m
-	alacritty -e neomutt
-# Brave	
+# open Brave with hardware video decoding
 alt + b
-	brave
-# Spotify 
+	brave --enable-features=VaapiVideoDecoder --use-gl=desktop
+# open Spotify
 alt + s
 	spotify 
-# KeePassXC
+# open KeePassXC
 alt + k
 	keepassxc
-# Teams
+# open M$ Teams
 alt + t
 	teams
-# Lock computer with physlock
+# Lock screen
 alt + l
 	physlock
-# List keybindings
-super + F1
-	alacritty -e  ~/.config/sxhkd/bindingprint.sh
+
+# show help
+alt + F1
+	alacritty -e ~/.config/sxhkd/bindingprint.sh

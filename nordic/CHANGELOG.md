@@ -1,3 +1,8 @@
+2021.10.09
+----------
+- Changed gap keybindings
+- Gap keybindings work on non-bash shells
+
 2021.08.13
 ----------
 - Removed Hungarian text from Polybar poweroff menu
