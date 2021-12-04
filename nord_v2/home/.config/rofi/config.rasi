@@ -1,4 +1,4 @@
 configuration {
 	font: "Roboto Condensed 12";
-	theme: "~/.config/rofi/nord.rasi";
 }
+@theme "~/.config/rofi/nord.rasi"

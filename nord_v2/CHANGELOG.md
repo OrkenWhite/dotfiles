@@ -1,3 +1,13 @@
+2021.12.04
+----------
+- Changed editor to nvim
+- Changed GTK4 theme to Nord colored Materia. This is only a temporary fix.
+- Changed icon theme to Nordzy-dark
+- Changed cursor theme to Nordzy
+- Added Kvantum, set to the Nordic theme
+- qt5ct changed to Kvantum
+- Added Easyeffects keyboard shortcut
+
 2021.10.09
 ----------
 - "Forked" from nordic

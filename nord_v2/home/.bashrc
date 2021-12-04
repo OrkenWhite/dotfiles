@@ -139,5 +139,5 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
-export EDITOR="/usr/bin/vim"
+export EDITOR="/usr/bin/nvim"
 export QT_QPA_PLATFORMTHEME="qt5ct"

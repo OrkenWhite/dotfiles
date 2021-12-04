@@ -25,7 +25,7 @@ case $(tty) in
 		(*) source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme ;;
 esac
 #Environment variables
-export EDITOR="/usr/bin/vim"
+export EDITOR="/usr/bin/nvim"
 export QT_QPA_PLATFORMTHEME="qt5ct"
 export GPG_TTY=$(tty)
 
@@ -33,3 +33,4 @@ export GPG_TTY=$(tty)
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 alias ls="ls --color=auto"
 alias grep="grep --color=auto"
+alias vim="nvim"

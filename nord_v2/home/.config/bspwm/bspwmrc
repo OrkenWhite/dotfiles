@@ -11,7 +11,9 @@ lxpolkit &
 feh --bg-scale ~/wallpaper.png
 ~/.config/polybar/launch.sh &
 gpg-agent --daemon
+kdeconnect-indicator &
 redshift &
+mailsync &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 

@@ -167,7 +167,7 @@ label-volume = 墳 %percentage%%
 label-volume-foreground = #88C0D0
 #label-volume-foreground = ${root.foreground}
 
-label-muted = ﱝ muted
+label-muted = ﱝ némítva
 label-muted-padding = 2
 label-muted-foreground = #88C0D0
 #label-muted-foreground = ${root.foreground}
@@ -263,7 +263,7 @@ format-spacing = 1
 format-padding = 2
 format-foreground = #BF616A
 
-label-open = ⏻ Shutdown
+label-open = ⏻ Poweroff
 #label-open-foreground = ${colors.secondary}
 label-close =  exit
 #label-close-foreground = ${colors.secondary}

@@ -148,22 +148,20 @@ alt + {3,2}
 # reload polybar
 alt + shift + @r
 	~/.config/polybar/launch.sh &
-# open Discord
+alt + e
+	GTK_THEME=materia-nord easyeffects
 alt + d
 	discord
-# open Brave with hardware video decoding
+alt + m
+	alacritty -e neomutt	
 alt + b
 	brave --enable-features=VaapiVideoDecoder --use-gl=desktop
-# open Spotify
 alt + s
-	spotify 
-# open KeePassXC
+	spotify --force-device-scale-factor=1.25
 alt + k
 	keepassxc
-# open M$ Teams
 alt + t
 	teams
-# Lock screen
 alt + l
 	physlock
 
